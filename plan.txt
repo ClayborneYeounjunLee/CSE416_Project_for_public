@@ -1,0 +1,39 @@
+# CSE416_Project_
+
+# **그냥 적고싶은거 적는 파일**
+
+#TODO
+    회원가입, 로그인, 게시판(고객센터), 댓글, 챗봇, (더 좋은 아이디어 있으면 추가 요망)
+    지도기능
+
+#problem :
+여행 계획 세우는데 많은 시간 소요
+
+#solution :
+나라의 도시와, 키워드 입력으로 AI가 장소들 추천
+-> 그 장소를 바탕으로 구글 지도 이용해서 루트 생성
+-> 만들어진 사용자를 위한 루트 사용자에게 추천
+
+#항공권 API:
+    https://velog.io/@j2noo/When-You-Buy-%EB%84%A4%EC%9D%B4%EB%B2%84-%ED%95%AD%EA%B3%B5%EA%B6%8C%EC%97%90%EC%84%9C-POST%EB%B0%A9%EC%8B%9D%EC%9D%98-api%EB%A5%BC-%ED%9B%94%EC%B3%90%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0with-Python
+     --> Selenium을 이용한 네이버 항공권 크롤링
+    10분에 한번씩 새로고침하며 크롤링을 할계획
+
+
+#AI API
+    open ai api 사용 예정 -> 토큰은 구매해야됨
+<모델 종류>
+Model	    Description
+GPT-4o	    Our high-intelligence flagship model for complex, multi-step tasks
+GPT-4o      mini	Our affordable and intelligent small model for fast, lightweight tasks
+GPT-4       Turbo and GPT-4	The previous set of high-intelligence models
+GPT-3.5     Turbo	A fast, inexpensive model for simple tasks
+DALL·E	    A model that can generate and edit images given a natural language prompt
+TTS	        A set of models that can convert text into natural sounding spoken audio
+Whisper	    A model that can convert audio into text
+Embeddings	A set of models that can convert text into a numerical form
+Moderation	A fine-tuned model that can detect whether text may be sensitive or unsafe
+GPT base	A set of models without instruction following that can understand as well as generate natural language or code
+Deprecated	A full list of models that have been deprecated along with the suggested replacement
+
+이중에 적절한것 골라야됨 - 충분히 숙지후 고를 예정

@@ -1,0 +1,500 @@
+/* 기존의 모든 리셋과 기본 스타일 유지 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:700,400|Zen+Kaku+Gothic+Antique:700|Konkhmer+Sleokchher:400|Roboto:500");
+
+/* 루트 변수 설정 */
+:root {
+  --shape-corner-large: 16px;
+  --radius-pill: 100px;
+}
+
+/* 전체 기본 설정 */
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+/* 포커스 스타일 */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 메인 컨테이너 스타일링 */
+.home-bf-sign-in {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-bf-sign-in .div {
+  background-color: #f0f0f0;
+  width: 1440px;
+  height: 924px;
+  position: relative;
+}
+
+/* 그룹 컴포넌트 스타일링 */
+.home-bf-sign-in .group {
+  position: absolute;
+  width: 802px;
+  height: 621px;
+  top: 148px;
+  left: 390px;
+}
+
+.home-bf-sign-in .overlap-group {
+  position: relative;
+  height: 621px;
+}
+
+.home-bf-sign-in .group-2 {
+  position: absolute;
+  width: 334px;
+  height: 387px;
+  top: 78px;
+  left: 0;
+}
+
+/* 헤딩 스타일링 */
+.home-bf-sign-in .heading-AI-travel {
+  position: absolute;
+  width: 330px;
+  height: 192px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 39.5px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-bf-sign-in .text-wrapper {
+  color: #3d39ff;
+}
+
+.home-bf-sign-in .span {
+  color: #000000;
+}
+
+/* 단락 스타일링 */
+.home-bf-sign-in .p {
+  position: absolute;
+  width: 238px;
+  height: 66px;
+  top: 277px;
+  left: 92px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17.9px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Get Started 버튼 스타일링 - 수정된 호버 효과 */
+.home-bf-sign-in .frame {
+  position: absolute;
+  width: 237px;
+  height: 44px;
+  top: 343px;
+  left: 93px;
+  background-image: url(https://c.animaapp.com/sKodZNE8/img/group-8.png);
+  background-size: 100% 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.home-bf-sign-in .frame:hover {
+  transform: translateY(-2px);
+}
+
+.home-bf-sign-in .frame:active {
+  transform: translateY(1px);
+}
+
+.home-bf-sign-in .text-wrapper-2 {
+  position: absolute;
+  height: 24px;
+  top: 9px;
+  left: 37px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* 이미지 스타일링 */
+.home-bf-sign-in .image {
+  width: 472px;
+  height: 621px;
+  left: 330px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+/* 네비게이션 그룹 스타일링 */
+.home-bf-sign-in .group-3 {
+  position: absolute;
+  width: 1378px;
+  height: 48px;
+  top: 17px;
+  left: 29px;
+}
+
+.home-bf-sign-in .frame-2 {
+  position: absolute;
+  width: 318px;
+  height: 28px;
+  top: 10px;
+  left: 532px;
+}
+
+/* 네비게이션 버튼 스타일링 */
+.home-bf-sign-in .button-for-profile,
+.home-bf-sign-in .option-wrapper,
+.home-bf-sign-in .div-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+  padding: 8px 10px;
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 네비게이션 버튼 호버 효과 */
+.home-bf-sign-in .button-for-profile:hover,
+.home-bf-sign-in .option-wrapper:hover,
+.home-bf-sign-in .div-wrapper:hover {
+  background-color: rgba(61, 57, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.home-bf-sign-in .button-for-profile:hover .option,
+.home-bf-sign-in .option-wrapper:hover .option,
+.home-bf-sign-in .div-wrapper:hover .option {
+  color: #3d39ff;
+}
+
+/* 버튼 위치 설정 */
+.home-bf-sign-in .button-for-profile {
+  left: 114px;
+}
+
+.home-bf-sign-in .option-wrapper {
+  left: 224px;
+}
+
+.home-bf-sign-in .div-wrapper {
+  left: 4px;
+}
+
+/* 옵션 텍스트 스타일링 */
+.home-bf-sign-in .option {
+  position: relative;
+  width: fit-content;
+  margin-top: -4.50px;
+  margin-bottom: -2.50px;
+  font-family: "Zen Kaku Gothic Antique", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 12.8px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease;
+}
+
+/* 로고 이미지 스타일링 */
+.home-bf-sign-in .img {
+  width: 152px;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+/* Sign In 버튼 스타일링 */
+.home-bf-sign-in .sign-in-button {
+  position: absolute;
+  width: 93px;
+  height: 43px;
+  top: 2px;
+  left: 1285px;
+  background-color: #000000;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Sign In 버튼 호버 효과 */
+.home-bf-sign-in .sign-in-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-bf-sign-in .sign-in-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.home-bf-sign-in .text-wrapper-3 {
+  position: absolute;
+  width: 66px;
+  top: 10px;
+  left: 14px;
+  font-family: "Konkhmer Sleokchher", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  white-space: nowrap;
+}
+
+/* 로그인 모달 관련 스타일링 */
+.home-bf-sign-in .rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 924px;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d999;
+}
+
+.home-bf-sign-in .rectangle-2 {
+  position: absolute;
+  width: 416px;
+  height: 188px;
+  top: 368px;
+  left: 512px;
+  background-color: #f6f6f6;
+  border-radius: var(--shape-corner-large);
+}
+
+/* 구글 로그인 버튼 스타일링 */
+.home-bf-sign-in .btn-google-light {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 3px;
+  position: absolute;
+  top: 493px;
+  left: 630px;
+  border-radius: var(--radius-pill);
+}
+
+.home-bf-sign-in .official-buttons {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  position: relative;
+  background-color: #eeeeee;
+  border-radius: var(--radius-pill);
+}
+
+.home-bf-sign-in .logo-googleg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.home-bf-sign-in .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #1f1f1f;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* Let's start with 텍스트 스타일링 */
+.home-bf-sign-in .let-s-start-with {
+  position: absolute;
+  width: 363px;
+  height: 118px;
+  top: 377px;
+  left: 538px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 25.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-bf-sign-in .text-wrapper-5 {
+  font-weight: 700;
+}
+
+.home-bf-sign-in .text-wrapper-6 {
+  font-size: 13.5px;
+}
+
+/* 모달 오버레이 스타일링 */
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 모달 컨테이너 스타일링 */
+.login-modal {
+  background-color: white;
+  padding: 48px;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+  width: 416px;
+  animation: slideUp 0.3s ease-out;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+/* 모달 헤더 텍스트 스타일링 */
+.modal-content h2 {
+  font-family: "Inter", Helvetica;
+  font-size: 25.5px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* 모달 설명 텍스트 스타일링 */
+.modal-content p {
+  font-family: "Inter", Helvetica;
+  font-size: 13.5px;
+  color: #666666;
+  margin: 0;
+  max-width: 363px;
+  line-height: 1.5;
+}
+
+/* 구글 로그인 버튼 스타일링 */
+.google-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 100px;
+  padding: 0 24px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.google-login-button:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 구글 로그인 버튼 텍스트 스타일링 */
+.google-login-text {
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1f1f;
+  margin: 0;
+}
+
+/* 닫기 버튼 스타일링 */
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #e5e5e5;
+}
+
+.close-icon {
+  width: 16px;
+  height: 16px;
+  color: #666666;
+}
+
+/* 애니메이션 정의 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

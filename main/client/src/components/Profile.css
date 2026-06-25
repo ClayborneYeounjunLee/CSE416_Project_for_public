@@ -1,0 +1,882 @@
+button {
+  all: unset;
+}
+
+
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 74px;
+    padding: 0px 0px 200px;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .profile-page .topnavbar-af-signin {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 32px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #fdfdfd4c;
+    box-shadow: 0px 4px 5px #00000040;
+  }
+  
+  .profile-page .frame {
+    position: relative;
+    width: 152px;
+    height: 47px;
+    transition: transform 0.3s ease;
+  }
+  .profile-page .frame:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  .profile-page .img {
+    position: absolute;
+    width: 49px;
+    height: 47px;
+    top: 0;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper {
+    position: absolute;
+    top: 3px;
+    left: 65px;
+    font-family: "Konkhmer Sleokchher", Helvetica;
+    font-weight: 400;
+    color: #080808;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .profile-page .activity-item:hover{
+      cursor: pointer;
+      color: #4a90e2;
+      font-weight: bold;
+  }
+  
+  .profile-page .div {
+    position: relative;
+    width: 318px;
+    height: 28px;
+  }
+  
+  .profile-page .button-for-profile {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 10px;
+    padding: 8px 10px;
+    position: absolute;
+    top: 0;
+    left: 114px;
+    border-radius: 12px;
+  }
+  
+  .profile-page .option {
+    position: relative;
+    width: fit-content;
+    margin-top: -4.50px;
+    margin-bottom: -2.50px;
+    font-family: "Zen Kaku Gothic Antique", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 12.8px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .option-wrapper {
+    left: 224px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 10px;
+    padding: 8px 10px;
+    position: absolute;
+    top: 0;
+    border-radius: 12px;
+  }
+  
+  .profile-page .div-wrapper {
+    left: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 10px;
+    padding: 8px 10px;
+    position: absolute;
+    top: 0;
+    border-radius: 12px;
+  }
+  
+  .profile-page .frame-2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #c6c4c4;
+    border-radius: 25px;
+    background-image: url(./img/mask-group.png);
+    background-size: 100% 100%;
+  }
+  
+  .profile-page .group {
+    position: relative;
+    width: 710px;
+    height: 1555px;
+  }
+  
+  .profile-page .text-wrapper-2 {
+    position: absolute;
+    width: 700px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .p {
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    top: 53px;
+    left: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #6d6d6d;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .text-wrapper-3 {
+    position: absolute;
+    width: 700px;
+    height: 40px;
+    top: 107px;
+    left: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .overlap-group {
+    position: absolute;
+    width: 700px;
+    height: 73px;
+    top: 166px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-4 {
+    position: absolute;
+    width: 700px;
+    height: 71px;
+    top: 0;
+    left: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #6d6d6d;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .line {
+    top: 70px;
+    position: absolute;
+    width: 700px;
+    height: 3px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .profile-page .group-2 {
+    position: absolute;
+    width: 705px;
+    height: 261px;
+    top: 265px;
+    left: 0;
+  }
+
+  .profile-page .group-3 {
+    position: absolute;
+    width: 704px;
+    height: 25px;
+    top: 236px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-5 {
+    position: absolute;
+    height: 25px;
+    top: 0;
+    left: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .text-wrapper-6 {
+    position: absolute;
+    height: 22px;
+    top: 2px;
+    right: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .text-wrapper-7 {
+    position: absolute;
+    height: 30px;
+    top: 0;
+    left: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .text-wrapper-8 {
+    position: absolute;
+    height: 18px;
+    top: 30px;
+    left: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #6d6d6d;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .group-4 {
+    position: absolute;
+    width: 703px;
+    height: 100px;
+    top: 69px;
+    left: 0;
+  }
+  
+  .profile-page .mask-group-wrapper {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 601px;
+    background-color: #c6c4c4;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .profile-page .mask-group-wrapper-top {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #c6c4c4;
+    border-radius: 25px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .profile-page .mask-group-wrapper-top:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  .profile-page .mask-group-top {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    scale: 1.2;
+  }
+  
+  .profile-page .mask-group {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 5px;
+    left: 5px;
+    scale:1.2;;
+  }
+  
+  .profile-page .line-2 {
+    top: 548px;
+    position: absolute;
+    width: 700px;
+    height: 3px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .profile-page .group-5 {
+    position: absolute;
+    width: 706px;
+    height: 146px;
+    top: 565px;
+    left: 0;
+  }
+  
+  .profile-page .group-6 {
+    position: absolute;
+    width: 706px;
+    height: 25px;
+    top: 121px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-9 {
+    position: absolute;
+    height: 22px;
+    top: 2px;
+    left: 589px;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .group-7 {
+    position: absolute;
+    width: 705px;
+    height: 25px;
+    top: 69px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-10 {
+    position: absolute;
+    height: 22px;
+    top: 2px;
+    right: 0px;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .line-3 {
+    top: 743px;
+    position: absolute;
+    width: 700px;
+    height: 3px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .profile-page .group-8 {
+    position: absolute;
+    width: 704px;
+    height: 372px;
+    top: 778px;
+    left: 0;
+  }
+  
+  .profile-page .group-9 {
+    position: absolute;
+    width: 706px;
+    height: 25px;
+    top: 62px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-11 {
+    position: absolute;
+    height: 22px;
+    top: 0;
+    right: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .group-10 {
+    position: absolute;
+    width: 706px;
+    height: 25px;
+    top: 119px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-12 {
+    position: absolute;
+    height: 22px;
+    top: 1px;
+    right: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .group-11 {
+    position: absolute;
+    width: 706px;
+    height: 25px;
+    top: 233px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-13 {
+    position: absolute;
+    height: 22px;
+    top: 2px;
+    right: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .group-12 {
+    position: absolute;
+    width: 704px;
+    height: 25px;
+    top: 176px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-14 {
+    position: absolute;
+    height: 22px;
+    top: 2px;
+    right: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .group-13 {
+    position: absolute;
+    width: 704px;
+    height: 25px;
+    top: 290px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-15 {
+    position: absolute;
+    height: 22px;
+    top: 2px;
+    right: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .group-14 {
+    position: absolute;
+    width: 706px;
+    height: 25px;
+    top: 347px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-16 {
+    position: absolute;
+    height: 22px;
+    top: 2px;
+    right: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 17.9px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .line-4 {
+    top: 1181px;
+    position: absolute;
+    width: 700px;
+    height: 3px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .profile-page .group-15 {
+    position: absolute;
+    width: 703px;
+    height: 210px;
+    top: 1216px;
+    left: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f9f9f9;
+  }
+  
+  .profile-page .group-16 {
+    position: absolute;
+    width: 705px;
+    height: 25px;
+    top: 62px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-17 {
+    position: absolute;
+    height: 25px;
+    top: 0;
+    right: 0;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #174772;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  
+  .profile-page .text-wrapper-18 {
+    position: absolute;
+    height: 24px;
+    top: 0;
+    left: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .profile-page .group-17 {
+    position: absolute;
+    width: 704px;
+    height: 25px;
+    top: 123px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-19 {
+    position: absolute;
+    height: 25px;
+    top: 0;
+    left: 534px;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #174772;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  
+  .profile-page .group-18 {
+    position: absolute;
+    width: 704px;
+    height: 25px;
+    top: 185px;
+    left: 0;
+  }
+  
+  .profile-page .text-wrapper-20 {
+    position: absolute;
+    height: 25px;
+    top: 0;
+    left: 530px;
+    font-family: "Tauri", Helvetica;
+    font-weight: 400;
+    color: #174772;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  
+  .profile-page .group-15 .delete-btn{
+    position: absolute;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-30px);
+  }
+
+  .profile-page .line-5 {
+    top: 1463px;
+    position: absolute;
+    width: 700px;
+    height: 3px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .profile-page .frame-3a {
+    position: absolute;
+    width: 145px;
+    height: 44px;
+    top: 1511px;
+    left: 0;
+    background-color: #5d5d5d;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .profile-page .frame-3a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  .profile-page .text-wrapper-21 {
+    position: absolute;
+    width: 145px;
+    height: 44px;
+    top: -1px;
+    left: 0;
+    font-family: "Instrument Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .profile-page .frame-4 {
+    position: absolute;
+    width: 145px;
+    height: 44px;
+    top: 1511px;
+    right:0;
+    background-color: #e02424cc;
+    border-radius: 10px;
+    overflow: hidden;transition: transform 0.3s ease;
+  }
+  .profile-page .frame-4:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Konkhmer+Sleokchher:400|Zen+Kaku+Gothic+Antique:700|Tauri:400|Instrument+Sans:700");
+  * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0px;
+    height: 100%;
+  }
+  /* a blue color as a generic focus style */
+  button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* 팝업 오버레이 스타일 */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 팝업 콘텐츠 스타일 */
+.popup-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* 닫기 버튼 스타일 */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #f44336; /* 버튼 배경색 */
+  color: #fff;         /* 버튼 글자색 */
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-button:hover {
+  background: #d32f2f; /* 호버 시 배경색 */
+}
+
+/* 여행지 제목 스타일 */
+.popup-content h2 {
+  font-family: "Tauri", Helvetica;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* 여행 세부 정보 */
+.trip-details p {
+  font-family: "Tauri", Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.day-plan {
+  margin-bottom: 15px;
+}
+.day-plan h4 {
+  font-family: "Tauri", Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+.day-plan ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.day-plan ul li {
+  margin-bottom: 5px;
+}
+.popup-content h3{
+  font-family: "Tauri", Helvetica;
+  font-size: 20px;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.itinerary {
+  font-family: "Tauri", Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.itinerary ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.itinerary ul li {
+  font-family: "Tauri", Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.itinerary .day-plan + .day-plan {
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+}
+.trip-details p {
+  margin: 5px 0;
+}
+
+
+
+.group-15 {
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column; /* 세로 정렬 */
+  gap: 10px; /* 여행 항목 간격 */
+}
+
+.trip-item {
+  display: block; /* 각 항목이 한 줄씩 표시되도록 설정 */
+  padding: 10px;
+  border: 1px solid #ccc; /* 테두리 추가 (선택 사항) */
+  border-radius: 5px; /* 모서리를 둥글게 (선택 사항) */
+  cursor: pointer;
+}
+
+
+.route-buttons-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.route-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.route-button:hover {
+  background-color: #45a049;
+}
+
+.button-icon {
+  font-size: 16px;
+}

@@ -1,0 +1,391 @@
+.manage-profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 74px;
+  padding: 0px 0px 200px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.manage-profile-page input{
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.manage-profile-page .topnavbar-af-signin {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 32px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #fdfdfd4c;
+  box-shadow: 0px 4px 5px #00000040;
+}
+
+.manage-profile-page .frame {
+  position: relative;
+  width: 152px;
+  height: 47px;
+  transition: transform 0.1s ease;
+}
+.manage-profile-page .frame:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.manage-profile-page .img {
+  position: absolute;
+  width: 49px;
+  height: 47px;
+  top: 0;
+  left: 0;
+}
+
+.manage-profile-page .text-wrapper {
+  position: absolute;
+  top: 3px;
+  left: 65px;
+  font-family: "Konkhmer Sleokchher", Helvetica;
+  font-weight: 400;
+  color: #080808;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .div {
+  position: relative;
+  width: 318px;
+  height: 28px;
+}
+
+.manage-profile-page .button-for-profile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+  padding: 8px 10px;
+  position: absolute;
+  top: 0;
+  left: 114px;
+  border-radius: 12px;
+}
+
+.manage-profile-page .option {
+  position: relative;
+  width: fit-content;
+  margin-top: -4.50px;
+  margin-bottom: -2.50px;
+  font-family: "Zen Kaku Gothic Antique", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 12.8px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .option-wrapper {
+  left: 224px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+  padding: 8px 10px;
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+}
+
+.manage-profile-page .div-wrapper {
+  left: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+  padding: 8px 10px;
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+}
+
+.manage-profile-page .mask-group-wrapper-top {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #c6c4c4;
+  border-radius: 25px;
+  background-size: 100% 100%;
+  overflow: hidden;
+  transition: transform 0.1s ease;
+}
+.manage-profile-page .mask-group-wrapper-top:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.manage-profile-page .mask-group-top {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  scale: 1.2;
+}
+
+.manage-profile-page .frame-3 {
+  display: flex;
+  flex-direction: column;
+  width: 701px;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.manage-profile-page .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Tauri", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .line {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 3.02px;
+  object-fit: cover;
+}
+
+.manage-profile-page .frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.manage-profile-page .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Tauri", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Tauri", Helvetica;
+  font-weight: 400;
+  color: #6d6d6d;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .group {
+  position: relative;
+  width: 697px;
+  height: 100px;
+}
+
+.manage-profile-page .overlap-group {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 595px;
+  border-radius: 50px;
+}
+
+.manage-profile-page .mask-group-wrapper {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: #c6c4c4;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.manage-profile-page .mask-group {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 5px;
+  left: 5px;
+  scale: 1.2;
+}
+
+.manage-profile-page .image-wrapper {
+  position: absolute;
+  width: 81px;
+  height: 25px;
+  top: 70px;
+  left: 10px;
+  background-image: url(./img/subtract.svg);
+  background-size: 100% 100%;
+}
+
+.manage-profile-page .image {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 6px;
+  left: 33px;
+  object-fit: cover;
+}
+
+.manage-profile-page .text-wrapper-4 {
+  position: absolute;
+  width: 350px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  font-family: "Tauri", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .group-2 {
+  position: relative;
+  width: 702px;
+  height: 25px;
+  margin-right: -1.00px;
+}
+
+.manage-profile-page .component {
+  position: absolute;
+  width: 350px;
+  height: 25px;
+  top: 0;
+  left: 350px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #9b9b9b;
+}
+
+.manage-profile-page .text-wrapper-5 {
+  position: absolute;
+  height: 22px;
+  top: 0;
+  left: 6px;
+  font-family: "Instrument Sans", Helvetica;
+  font-weight: 700;
+  color: #909090cc;
+  font-size: 17.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .group-3 {
+  position: relative;
+  width: 702px;
+  height: 28px;
+  margin-right: -1.00px;
+}
+
+.manage-profile-page .bibimbap-wrapper {
+  position: absolute;
+  width: 350px;
+  height: 25px;
+  top: 3px;
+  left: 350px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #9b9b9b;
+}
+
+.manage-profile-page .text-wrapper-6 {
+  position: absolute;
+  height: 25px;
+  top: 0;
+  left: 0;
+  font-family: "Tauri", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-profile-page .frame-5 {
+  position: relative;
+  width: 145px;
+  height: 44px;
+  background-color: #5d5d5d;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.1s ease;
+}
+.manage-profile-page .frame-5:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.manage-profile-page .text-wrapper-7 {
+  position: absolute;
+  width: 145px;
+  height: 44px;
+  top: -1px;
+  left: 0;
+  font-family: "Instrument Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Konkhmer+Sleokchher:400|Zen+Kaku+Gothic+Antique:700|Tauri:400|Instrument+Sans:700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
