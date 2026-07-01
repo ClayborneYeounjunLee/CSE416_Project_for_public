@@ -1,3 +1,5 @@
+> 📄 한국어 상세 구조 문서: [프로젝트_구조.md](./프로젝트_구조.md)
+
 AI Travel Planner
 AI Travel Planner is a web application designed to automate travel planning and enhance user experiences using Google, Skyscanner, and Google Hotel APIs.
 
