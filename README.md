@@ -1,79 +1,62 @@
 > 📄 한국어 상세 구조 문서: [프로젝트_구조.md](./프로젝트_구조.md)
 
-AI Travel Planner
-AI Travel Planner is a web application designed to automate travel planning and enhance user experiences using Google, Skyscanner, and Google Hotel APIs.
+# AI Travel Planner (Stony Brook CSE416 Course Project)
 
+A full-stack web application that generates personalized multi-day travel itineraries with the OpenAI API (gpt-4o). Users sign in with Google (Firebase Authentication), manage a profile stored in MongoDB, and save generated trips — each plan comes with ready-made hotel (Booking.com) and flight (Google Flights) search links.
 
-// How To run the server & Client====================================================================================
-1. Client Part
-- npm install axios, firebase, react-router-dom, --save @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
-- You can run the client by typing "npm start"
-2. Server Part
-- npm install express mongoose body-parser cors
-- You can run server by typing "node server.js"
-//=============================================================================================================
+## Tech Stack
 
+- **Client** — React 18 (Create React App), react-router-dom, axios, Firebase JS SDK (Google sign-in)
+- **Server** — Node.js + Express, Mongoose (MongoDB), OpenAI Chat Completions API (`gpt-4o`)
+- **Deploy** — Firebase Hosting via GitHub Actions (client)
 
+## How to Run
 
-Project Setup
-1. Requirements
-Ensure you have the following software installed:
+### 1. Server
 
-Node.js: Version 16.x or above
-npm: Version 8.x or above
-MongoDB Atlas: For database hosting
-Google Cloud Console: To generate API keys
-Skyscanner Developer Account: To generate Skyscanner API keys
-Google Hotel API: For retrieving hotel information
-2. Installation Steps
-Clone the Project
+```bash
+cd main/server
+npm install
+cp .env.example .env   # then fill in your own values
+node server.js         # runs on http://localhost:8000
+```
 
-Ensure that the MONGO_URI in the .env file is correct.
-The database will be created automatically during the first execution if it does not already exist.
-Run the Backend
+`.env` values (template: [main/server/.env.example](main/server/.env.example)):
 
-Click the Google login button.
-Log in using a Google account and verify that user information is saved in MongoDB.
-Profile Update
+- `MONGODB_URI` — MongoDB connection string (Atlas or local). Never commit the real `.env`.
+- `OPENAI_API_KEY` — OpenAI API key.
 
-Update the phone number and country in the user profile.
-Click "Save Changes" and verify the updated information.
-Feedback Board Test
+### 2. Client
 
-Submit feedback messages via the feedback form.
-Verify that all feedback messages are displayed on the feedback list.
-Travel Planner
+```bash
+cd main/client
+npm install
+npm start              # runs on http://localhost:3000
+```
 
-Use the Where? and When? pages to select a destination and schedule.
-Retrieve flight and hotel information using Skyscanner and Google Hotel APIs.
-API Key Configuration
-1. Google Cloud API Key
-Log in to Google Cloud Console.
-Create a new project or select an existing one.
-Navigate to APIs & Services > Credentials.
-Click "Create API Key" and add the generated key to the .env file:
-makefile
-코드 복사
-GOOGLE_API_KEY=your_google_api_key
-2. Skyscanner API Key
-Register at the Skyscanner Developer Portal.
-Create a new application and retrieve the API key.
-Add the key to the .env file:
-makefile
-코드 복사
-SKYSCANNER_API_KEY=your_skyscanner_api_key
-3. Google Hotel API
-Enable the Google Places API for Hotels on the Google Cloud Console.
-Use an existing API key or create a new one and add it to the .env file:
+The Firebase web config lives in [main/client/src/firebase.js](main/client/src/firebase.js). It is Firebase's public client config — access control is enforced by Firebase console rules and authorized domains, not by hiding these values. To use your own Firebase project, replace the config object with your own.
 
+## API Endpoints (server, port 8000)
 
-Simple login using Firebase Authentication and Google OAuth 2.0.
-Profile Management
+| Method | Path | Description |
+|---|---|---|
+| POST | `/api/users` | Create or fetch a user after Google sign-in |
+| GET | `/api/users/:uid` | Get a user profile |
+| PUT | `/api/users/:uid` | Update a user profile |
+| POST | `/api/plan-trip` | Generate an itinerary with gpt-4o + booking links |
+| POST | `/api/save-travel-plan` | Save a generated plan |
+| GET | `/api/users/:uid/trips` | List a user's saved trips |
+| GET | `/api/trips/:tripId` | Get one saved trip |
+| DELETE | `/api/trips/:tripId` | Delete a saved trip |
 
-Save and update user profiles in MongoDB.
-Feedback Board
+## Testing the App
 
-Submit feedback and view feedback from all users.
-Travel Planning
+1. Start the server and client as above.
+2. Click the Google login button and sign in — verify the user is saved in MongoDB.
+3. Update the phone number and country in the user profile and save.
+4. Use the travel planner to pick a destination and dates, then generate a plan — verify the itinerary and the Booking.com / Google Flights links.
 
-Search for flights and hotels using Skyscanner and Google Hotel APIs.
+## Known Limitations
+
+- The feedback board UI (client) posts to `/api/feedback`, but that route is not implemented in `server.js` — only the Mongoose model (`models/Feedback.js`) exists.
+- No automated tests beyond the CRA default.

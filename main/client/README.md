@@ -1,6 +1,6 @@
 # AI Travel Planner
 
-An intelligent travel planning web application that leverages AI to create personalized travel itineraries based on user preferences, utilizing Google Maps, Skyscanner, and hotel APIs.
+An intelligent travel planning web application that generates personalized multi-day travel itineraries with the OpenAI API (gpt-4o), with Google sign-in via Firebase Authentication and ready-made hotel/flight search links for each plan.
 
 ## 🌟 Features
 
@@ -14,10 +14,10 @@ An intelligent travel planning web application that leverages AI to create perso
   - Secure user profile management
   - Personalized user experience
 
-- **Travel Services Integration**
-  - Hotel booking via Google Hotels API
-  - Flight booking via Skyscanner API
-  - Interactive maps and location services
+- **Booking Links**
+  - Hotel search links via Booking.com
+  - Flight search links via Google Flights
+  - Generated automatically for each itinerary
 
 ## 🚀 Getting Started
 
@@ -25,12 +25,9 @@ An intelligent travel planning web application that leverages AI to create perso
 
 - Node.js (v16.x or higher)
 - npm (v8.x or higher)
-- MongoDB Atlas account
-- Firebase project
-- API keys for:
-  - Google Cloud Platform
-  - OpenAI
-  - Skyscanner
+- MongoDB Atlas account (or local MongoDB)
+- Firebase project (Google sign-in enabled)
+- OpenAI API key (server-side, via `server/.env`)
 
 ### Installation
 
@@ -72,10 +69,13 @@ project-root/
 │   ├── public/
 │   └── src/
 │       ├── components/
+│       │   ├── FeedbackForm.js
+│       │   ├── FeedbackList.js
 │       │   ├── FinishedLoginPage.js
 │       │   ├── LoginPage.js
 │       │   ├── Profile.js
 │       │   ├── ProfileEdit.js
+│       │   ├── SignInPage.js
 │       │   └── TravelPlan.js
 │       ├── firebase.js
 │       └── App.js
@@ -99,17 +99,7 @@ GET  /api/trips/:tripId     - Get specific trip details
 
 ## 🔑 Firebase Configuration
 
-```javascript
-const firebaseConfig = {
-  apiKey: "AIzaSyAWvQb0IQLBX67SCzhJ7eUI8JHrlwT0Hrc",
-  authDomain: "cse416-14112.firebaseapp.com",
-  projectId: "cse416-14112",
-  storageBucket: "cse416-14112.appspot.com",
-  messagingSenderId: "670480129388",
-  appId: "1:670480129388:web:32f6ef11713488c81a2749",
-  measurementId: "G-RDHXYMTX87"
-};
-```
+The Firebase web config lives in [`src/firebase.js`](./src/firebase.js). To use your own Firebase project, replace the `firebaseConfig` object there with the values from your Firebase console (Project settings → Your apps). This is Firebase's public client config — access control is enforced by Firebase console rules and authorized domains, not by keeping these values hidden.
 
 ## 🛠️ Technologies Used
 
@@ -126,10 +116,8 @@ const firebaseConfig = {
   - OpenAI API
 
 - **APIs**
-  - Google Maps API
-  - Skyscanner API
-  - Google Hotels API
-  - OpenAI GPT-4
+  - OpenAI Chat Completions (gpt-4o, server-side)
+  - Booking.com / Google Flights (search links, no API key needed)
 
 ## 🔐 Security Notes
 
@@ -147,14 +135,8 @@ const firebaseConfig = {
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## ⚖️ License
-
-This project is licensed under the MIT License - see the LICENSE file for details
-
-
 ## 🙏 Acknowledgments
 
-- OpenAI for GPT API
-- Google Cloud Platform
-- Skyscanner API
+- OpenAI for the GPT API
+- Firebase Authentication
 - MongoDB Atlas
